@@ -1,0 +1,206 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+a.home {
+  text-decoration: none;
+  color: white;
+}
+
+a.bots {
+  text-decoration: none;
+}
+
+.bg-mainpage {
+  /* The image used */
+  background-image: url("img/eee.png");
+  text-decoration: none;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-thetabots {
+  background-image: url("img/botslogo.png");
+  text-decoration: none;
+  background-color: #D4D4D4;
+
+  /* Full height */
+  height: 120%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.top-centered{
+  position:absolute;
+  top: 10px;
+
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+  }
+
+.titletext {
+  text-decoration: none;
+  text-align: center;
+  font-size: 60px;
+  font-family: monospace;
+  color: white;
+}
+
+.listtext {
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  color: white;
+}
+
+.bottom-right {
+  text-align: right;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-family: monospace;
+  color: white;
+  font-size: 20px;
+}
+
+.center-container-tilte {
+  padding-top: 300px;
+  font-family: monospace;
+  font-size: 34px;
+  text-align: center;
+  padding-left: 330px;
+  padding-right: 330px;
+  color: gold;
+
+}
+
+
+
+
+
+  h1 {
+    font-family: monospace;
+    color: black;
+    font-size: 56px;
+  }
+
+  h2 {
+    font-family: monospace;
+    color: black;
+    font-size: 40px;
+
+  }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+  }
+
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    width:1000px;
+    height:300px;
+    gap:0px;
+  }
+
+  .container1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+    width:1000px;
+    height:200px;
+    gap:0px;
+  }
+
+  .button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 0px;
+    background-color:white;
+    padding: 0px;
+    border:none;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap:0px;
+    text-align: center;
+}
+
+  .grid-item{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .theta-contact-link{
+    position: absolute;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: monospace;
+    text-align: center;
+    top: 90%;
+    left: 33%;
+    color: black;
+    }
+
+  .theta-rule-link{
+    position: absolute;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: monospace;
+    text-align: center;
+    color: black;
+    top: 105%;
+    left: 41%;
+  }

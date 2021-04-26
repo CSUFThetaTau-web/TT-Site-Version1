@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<style>
+	body{
+	font-family: Arial, Helvetica, sans-serif;
+  background-image: url("img/CartSpace.png");
+	}
+
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: auto auto ;
+      grid-gap: 200px;
+      background-color:#191970;
+      padding: 0px;
+      border:none;
+      width:0%;
+      row-gap:20px;
+
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  background-color: #0C0032;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.inb {
+  background-color:#0C0032;
+  border:none;
+}
+
+.inb2{
+  background-color: white;
+  border:none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  background-color: #0C0032;
+}
+
+.grid-item{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 100px;
+  border: none;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+</style>
+
+
+  <body>
+<div class="container">
+<h1 class="center" style="color:Gold">Rush Theta Tau at CSUF</h1>
+<p style="color:Gold;" class="center">We are a professional Co-Ed Fraternity who pursue development of outstanding Engineers. Come out to our rush week and meet the active members and what we do. If you have any questions please contact the two rush chairs. </p>
+<img src="img/rushcard.png" alt="Flyer Part 1" style="width:750px;height:300px;" class="center">
+</div>
+
+<div class="center">
+<div class="grid-container2">
+
+<div class="grid-item">  <h1 style="color:#FFD700;width:200px"> Meet The Brothers</h1>
+    <p style="color:#FFD700;width:200px"> Click on button for more information. </p>
+
+    <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <button class="inb" onclick="myFunction()"> <img src="img/Brothers.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+    </div>
+    <div class="flip-card-back">
+      <button class="inb2" onclick="myFunction()"> <img src="img/Brothers.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+<div class="grid-item">
+  <p id="demo" style="color:#FFD700;width:200px" align="center"></p>
+  <p id="demo1" style="color:#FFD700;width:200px" align="center"></p>
+  <script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "Come out and meet the active members on our beautiful campus! It's a great opportunity to network with us and get to know more! All of this alongside FREE food! Location: ECS Quad 7pm" ;
+  document.getElementById("demo1").innerHTML = "Location: ECS Quad at 7 PM."
+  }
+  </script>
+</div>
+
+
+
+<div class="grid-item"> <h1 style="color:#FFD700;width:200px"> Info Night</h1>
+<p style="color:#FFD700;width:200px"> Click on button for more information. </p>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <button class="inb" onclick="myFunction1()"><img src="img/Info.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+<div class="flip-card-back">
+  <button class="inb2" onclick="myFunction1()"><img src="img/Info.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+</div>
+</div>
+
+</div>
+<div class="grid-item">
+
+  <p id="demo2" style="color:#FFD700;width:200px" ></p>
+  <p id="demo3" style="color:#FFD700;width:200px" align="center"></p>
+          <script>
+          function myFunction1() {
+          document.getElementById("demo2").innerHTML = "This night is dedicated to answer any questions you may have about our organization. There will also be alumni in order to answer how Theta Tau is a great organization and has helped them out in their post-academic career.";
+          document.getElementById("demo3").innerHTML = "Location: MH 432. Meet at ECS quad at 7 PM. ";
+          }
+          </script>
+
+</div>
+
+
+<div class="grid-item"> <h1 style="color:#FFD700;width:200px"> Game Night</h1>
+<p style="color:#FFD700;width:200px"> Click on button for more information. </p>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <button class="inb" onclick="myFunction2()"><img src="img/Game.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+<div class="flip-card-back">
+  <button class="inb2" onclick="myFunction2()"><img src="img/Game.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="grid-item">
+  <p id="demo4" style="color:#FFD700;width:200px"></p>
+  <p id="demo5" style="color:#FFD700;width:200px" align="center"></p>
+  <script>
+  function myFunction2() {
+  document.getElementById("demo4").innerHTML = "Tonight's a night that consists of casual games such as pool, bowling, ping pong and more! Feel free to come with any of your own systems or games as well!";
+  document.getElementById("demo5").innerHTML = "Location: TSU Pub Underground 7:30 PM. Meet at ECS at 7:00 PM.";
+  }
+  </script>
+</div>
+
+
+
+
+
+<div class="grid-item"> <h1 style="color:#FFD700;width:200px"> BBQ Night </h1>
+<p style="color:#FFD700;width:200px"> Click on button for more information. </p>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <button class="inb" onclick="myFunction3()"><img src="img/BBQ.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+<div class="flip-card-back">
+  <button class="inb2" onclick="myFunction3()"><img src="img/BBQ.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+</div>
+</div>
+
+
+</div>
+<div class="grid-item">
+  <p id="demo6" style="color:#FFD700;width:200px"></p>
+  <p id="demo7" style="color:#FFD700;width:200px" align="center"></p>
+  <script>
+  function myFunction3() {
+  document.getElementById("demo6").innerHTML = "Come out to feast with our fellow brothers on snacks, hamburgers and hot dogs! Vegan options will also be available!";
+  document.getElementById("demo7").innerHTML = "Location: Acacia Park 7:30PM. Meet at ECS Quad at 7PM for rides.";
+  }
+  </script>
+</div>
+
+
+
+<div class="grid-item"> <h1 style="color:#FFD700;width:200px"> Interviews </h1>
+<p style="color:#FFD700;width:200px"> Click on button for more information. </p>
+
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front">
+  <button class="inb" onclick="myFunction4()"><img src="img/Formal.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+<div class="flip-card-back">
+  <button class="inb2" onclick="myFunction4()"><img src="img/Formal.png" alt="Flyer Part 1" style="width:200px;height:100px;"></button>
+</div>
+</div>
+</div>
+
+</div>
+<div class="grid-item">
+  <p id="demo8" style="color:#FFD700;width:200px"></p>
+  <p id="demo9" style="color:#FFD700;width:200px" align="center"></p>
+  <script>
+  function myFunction4() {
+  document.getElementById("demo8").innerHTML = "This event is invite only through our active brothers. Thank you for showing up to any of our past events and we hope to see you around campus!";
+  document.getElementById("demo9").innerHTML = "Those selected should have recieved an email about time and place.";
+  }
+  </script>
+</div>
+
+
+</div>  <!--this is the end of the 3x(X) grid lock -->
+</div>
+
+
+
+
+
+
+<div class="center">
+  <div class="container">
+    <h1 style="color:#FFD700" align="center"> The Process </h1>
+    </div>
+
+<div class="grid-container2">
+  <div class="grid-item"> <h1 style="color:#FFD700" class="center"> Rushing </h1>
+    <p class="center" style="color:#FFD700; width:200px" > This week is meant for meeting the active members on our campus and learning about our organization's mission as a whole. </p>
+  </div>
+
+  <div class="grid-item"> <h1 style="color:#FFD700" class="center"> Interviews </h1>
+<p class="center" style="color:#FFD700; width:200px"> Following rush week, we're gonna be meeting with some of you to learn more about you and your ambitions. Chances of obtaining an interview can reflect on how many rush events were attended. </p>
+  </div>
+
+  <div class="grid-item"> <h1 style="color:#FFD700" class="center"> Bidding </h1>
+<p class="center" style="color:#FFD700; width:200px"> Post-Interviews, rushees will be obtaining bids from Active Members. What a bid is by definition is a formal invitation in order to join our organization. Very few have the opportunity to achieve this. </p>
+  </div>
+
+  <div class="grid-item"> <h1 style="color:#FFD700" class="center"> Classified </h1>
+<p class="center" style="color:#FFD700; width:200px"> Information moving forward is available only to those who recieve a bid. </p>
+  </div>
+</div>
+
+</div>  <!--This is the end of the 2x(X) grid lock -->
+
+<div class="container">
+<h1 style="color:#FFD700" align="center"> Eligibiity Requirements: </h1>
+<p  class="center" style="color:#FFD700; width:250px"> Undergraduate in Mechanical Engineering, Electrical Engineering, Civil Engineering, Computer Engineering or Computer Science </p>
+<p  class="center" style="color:#FFD700"> 18 years of age </p>
+<p  class="center" style="color:#FFD700"> GPA is 2.0 or above </p>
+</div>
+</body>
+</html>

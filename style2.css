@@ -1,0 +1,127 @@
+
+body {
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.topheader {
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  color: #8B0000;
+  text-align: center;
+  margin: 20px;
+}
+
+.midheader {
+  font-size: 55px;
+  color: #ffffff;
+  margin-left: 0px;
+  text-align: center;
+  background-color: #0F292F;
+}
+
+  .legacyone {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 100%;
+           text-align: right;
+           width:auto;
+           height:300px;
+           gap:0px;
+           font-size: 35px;
+           color: #301934;
+           padding-bottom: 75px;
+  }
+
+    .legacytwo {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             width: 100%;
+             text-align: left;
+             width:auto;
+             height:300px;
+             gap:0px;
+             font-size: 35px;
+             color: #301934;
+             padding-bottom: 200px;
+    }
+
+  .topbody {
+    font-size: 55px;
+    color: #ffffff;
+    margin-left: 0px;
+    text-align: center;
+    background-color: #0F292F;
+    }
+
+    .grid-container-zero {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        background-color: #0F292F;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+  }
+
+    .grid-container-one {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: white;
+        padding: 10px;
+        width: auto;
+        height: auto;
+
+  }
+
+  .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+            background-color: white;
+          }
+
+    .grid-container-two {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: white;
+        width: auto;
+        padding: 10px;
+  }
+
+  .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+}
+
+  .brotherhood {
+    font-size: 15px;
+    color: #301934;
+}
+
+  .professionalism {
+    font-size: 15px;
+    color: #301934;
+}
+
+  .service {
+    font-size: 15px;
+    color: #301934;
+}
+
+hr.new1 {
+  border-top: 15px solid black;
+}
